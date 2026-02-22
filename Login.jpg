@@ -1,0 +1,157 @@
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-image: url("Login.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    align-content: center;
+    width: 420px;
+    border: black;
+    background: rgba(255, 255, 255, 0.75);
+    color: black;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 1px solid black;
+    margin-left: 550px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+   position: relative;
+   width: 100%;
+   height: 50px;
+   margin: 25px 0;
+   overflow: hidden;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: 1px solid blue;
+    border-radius: 30px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    transition: all 0.2s linear;
+}
+.input-box input::placeholder{
+    color: black;
+}
+input:is(:focus,:valid)~i{
+    color: blue;
+}
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.show_pass{
+    color: blue;
+    border-radius: 30px;
+    padding:0.9rem 0.5rem;
+}
+.show_pass:hover{
+    background-color: rgb(220, 218, 218);
+}
+.wrapper .btn {
+width: 100%;
+height: 45px;
+background: blue;
+border: none;
+outline: none;
+border-radius: 30px;
+box-shadow: 0 0 10px rgba(0, 26, 255, 0.1);
+cursor: pointer;
+font-size: 16px;
+color: #333;
+font-weight: 600;
+}
+
+.wrapper .register-link {
+font-size: 14.5px;
+text-align: center;
+margin: 20px 0 15px;
+}
+
+.register-link p a {
+color: blue;
+text-decoration: none;
+font-weight: 600;
+}
+
+.register-link p a:hover {
+text-decoration: underline;
+}
+.ent .btn{
+    color: white; 
+    background-color: black;
+}
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 20px;
+        margin: 10% auto;
+    }
+
+    .wrapper h1 {
+        font-size: 1.8rem;
+    }
+
+    .input-box input {
+        font-size: 14px;
+    }
+
+    .wrapper .btn {
+        font-size: 14px;
+    }
+
+    .show_pass {
+        padding: 0.7rem 0.4rem;
+    }
+}
+@media (max-width: 480px) {
+    .wrapper {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .wrapper h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-box input {
+        font-size: 13px;
+        padding: 15px 35px 15px 15px;
+    }
+
+    .input-box i {
+        font-size: 18px;
+    }
+
+    .show_pass {
+        padding: 0.6rem 0.4rem;
+    }
+
+    .wrapper .btn {
+        font-size: 12px;
+    }
+
+    .register-link p a {
+        font-size: 13px;
+    }
+}
