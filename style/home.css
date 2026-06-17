@@ -1,0 +1,86 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-top: -10px;
+    margin-left: 20px;
+    position: absolute;
+}
+header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #4CAF50; /* Green color */
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #f0f3f6; /* Blue color */
+}
+
+.section {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.start-button, .voice-button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover, .voice-button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.feedback {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #4CAF50; /* Green border for feedback */
+    background-color: #e8f5e9; /* Light green background */
+    color: #333; /* Dark text */
+}
+
+.progress {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.voice-output {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2196F3; /* Blue color */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
